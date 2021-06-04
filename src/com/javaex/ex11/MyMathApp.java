@@ -1,7 +1,7 @@
 package com.javaex.ex11;
 
 public class MyMathApp {
-
+    //static 조사 
 	public static void main(String[] args) {
 		
 		/*
@@ -21,6 +21,9 @@ public class MyMathApp {
 		System.out.println(MyMath.plus(10.1, 12.4));
 		System.out.println(MyMath.plus(99, 99.4));
 		System.out.println(MyMath.plus(99.7, 34));
+		
+		System.out.println(MyMath.cirleArea(5));
+		
 		
 		
 		MyMath myMath = new MyMath(); // 이렇게 쓸 이유가 없다

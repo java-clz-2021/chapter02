@@ -1,7 +1,14 @@
 package com.javaex.ex01;
+//staic 조사
 
 public class GoodsApp {
-
+	//필드
+	private static String name;
+	//생성자
+	
+	//메소드 g/s
+	
+	//메소드 일반
 	public static void main(String[] args) {
 		
 		Goods camera = new Goods();
@@ -23,6 +30,16 @@ public class GoodsApp {
 		System.out.println(cup.name + "," + cup.price);
 		
 		
+		System.out.println(name);
+		
+		System.out.println(cirleArea(10));
+		
+	
+	}
+	
+	public static double cirleArea(int radius) {
+		double result = radius*radius*3.14;
+		return result;
 	}
 
 }
