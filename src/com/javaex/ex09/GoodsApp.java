@@ -1,7 +1,8 @@
 package com.javaex.ex09;
 
 public class GoodsApp {
-
+    // static 관련업무 --> static 예제
+	// count용도로 static 잘 사용하지 않는다 --> *배열 --> 리스트
 	public static void main(String[] args) {
 		
 		Goods computer = new Goods("그램", 100000);
