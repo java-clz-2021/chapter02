@@ -17,6 +17,14 @@ public class PersonApp {
 		
 		s01.showInfo();
 		
+		//비교해볼것
+		Person p01 = new Person();
+		p01.setName("이효리");
+		p01.setAge(45);
+		
+		p01.showInfo();
+		
+		
 	}
 
 }
