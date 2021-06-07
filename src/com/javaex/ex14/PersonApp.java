@@ -24,9 +24,14 @@ public class PersonApp {
 		//부모의 디폴트 생성자 사용-->확인
 		//Student s03 = new Student();
 		
-		
 		Student s04 = new Student("이효리", 45, "제주고등학교");
-
+		s04.showInfo();
+		
+		
+		Person p = new Person();
+		p.name ="바보야"; //다른 패키지였으면 접근하지 못한다.
+		
+		
 	}
 
 }

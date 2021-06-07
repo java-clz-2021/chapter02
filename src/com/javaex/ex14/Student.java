@@ -11,13 +11,27 @@ public class Student extends Person {
 		System.out.println("Student()");
 	}
 
+	
+	
+	/*
+	//부모의 Person(2)생성자 사용
 	public Student(String name, int age, String schoolName) {
-		//super(name, age);
-		
-		
+		super(name, age);
 		this.schoolName = schoolName;
 		System.out.println("Student(3)");
 	}
+	*/
+	
+	//부모의 Person()생성자 사용
+	public Student(String name, int age, String schoolName) {
+		super();
+		super.setName(name);
+		this.setAge(age);
+		this.schoolName = schoolName;
+		System.out.println("Student(3)");
+	}
+	
+	
 
 	//메소드-gs
 	public String getSchoolName() {
@@ -36,8 +50,8 @@ public class Student extends Person {
 	
 	public void showInfo() {
 		System.out.println("------------------------------------");
-		System.out.println("이름:" + getName());
-		System.out.println("나이:" + getAge());
+		System.out.println("이름:" + super.name);
+		System.out.println("나이:" + age);
 		System.out.println("학교:" + schoolName);
 		System.out.println("------------------------------------");
 	}

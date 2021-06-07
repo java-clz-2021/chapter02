@@ -3,8 +3,8 @@ package com.javaex.ex14;
 public class Person {
 
 	//필드
-	private String name;
-	private int age;
+	protected String name;
+	protected int age;
 	
 
 	//생성자
@@ -15,7 +15,7 @@ public class Person {
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
-		System.out.println("Person(2)");
+		System.out.println("Person()");
 	}
 
 	//메소드-gs
