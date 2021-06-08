@@ -3,17 +3,19 @@ package com.javaex.ex17;
 public class Shape {
 	
 	//필드
-	private String fillColor;
-	private String lineColor;
+	protected String fillColor;
+	protected String lineColor;
 	
 	
 	//생성자
 	public Shape() {
+		System.out.println("Shape()");
 	}
 	
 	public Shape(String fillColor, String lineColor) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
+		System.out.println("Shape(2)");
 	}
 
 
@@ -45,5 +47,8 @@ public class Shape {
 		System.out.println("[면색:" + fillColor + 
 				           ", 선색:" + lineColor + "] 도형을 그렸습니다.");
 	}
+	
+	
+	
 	
 }

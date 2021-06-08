@@ -10,12 +10,15 @@ public class Rectangle extends Shape{
 
 	public Rectangle() {
 		//super();      // Shape() --> 표기는 super()
+		System.out.println("Rectangle()");
 	}
 
 	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		//super();      // Shape() --> 표기는 super()
+		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
+		System.out.println("Rectangle(4)");
 	}
 
 
@@ -23,9 +26,7 @@ public class Rectangle extends Shape{
 	public int getWidth() {
 		return width;
 	}
-
 	
-
 	public void setWidth(int width) {
 		this.width = width;
 	}
@@ -39,10 +40,16 @@ public class Rectangle extends Shape{
 	}
 
 	//메소드-일반
-
 	@Override
 	public String toString() {
-		return "Rectangle [width=" + width + ", height=" + height + "]";
+		return "Rectangle [width=" + width + ", height=" + height + 
+				", fillColor=" + fillColor + ", lineColor=" + lineColor + "]";
+	}
+
+	public void draw() {
+		System.out.println("[면색:" + fillColor + ", 선색:" + lineColor + 
+				           ", 가로:" + width + ", 세로:" + height + 
+				           "] 사각형을 그렸습니다. " );
 	}
 	
 	
