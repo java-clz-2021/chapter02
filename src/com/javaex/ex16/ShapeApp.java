@@ -16,18 +16,33 @@ public class ShapeApp {
 		rArray[1] = r02;
 		rArray[2] = r03;
 		
-		//배열을 이용한 그리기
+		//배열을 이용한 사각형 그리기
 		for(int i=0; i<rArray.length; i++) {
 			rArray[i].draw();
 		}
 		
 		
 		//원 관리
-		//변수사용해서 그리기
+		Circle[] cArray = new Circle[3];
+		
+		//변수를 만들지 않고 바로 배열에 저장
+		cArray[0] = new Circle("빨강", "검정", 11);
+		cArray[1] = new Circle("노랑", "검정", 22);
+		cArray[2] = new Circle("초록", "검정", 33);
+		
+		//배열을 이용한 원 그리기
+		for(int i=0; i<cArray.length; i++) {
+			cArray[i].draw();
+		}
+		
+		
+        
+		
 		
 		
 		//////////////////////////////////////////////////////////
-		
+		//변수와 배열을 이용한 draw 비교 코드
+		/////////////////////////////////////////////////////////
 		/*
 		//변수를 이용한 면색 변경
 		r01.setFillColor("파랑");
@@ -35,6 +50,7 @@ public class ShapeApp {
 		r03.setFillColor("파랑");
 		*/
 		
+		/*
 		//배열을 이용한 면색 변경
 		for(int i=0; i<rArray.length; i++) {
 			rArray[i].setFillColor("파랑");
@@ -44,7 +60,7 @@ public class ShapeApp {
 		for(int i=0; i<rArray.length; i++) {
 			rArray[i].draw();
 		}
-		
+		*/
 		
 		/*
 		//변수를 이용한 그리기

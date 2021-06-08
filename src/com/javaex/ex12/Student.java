@@ -44,10 +44,18 @@ public class Student {
 	}
 
 	//메소드-일반
-
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", age=" + age + ", schoolName=" + schoolName + "]";
 	}
+	
+	public void showInfo() { // 화면출력용 만들기 힘들다, 오래걸린다
+		System.out.println("---------------------------------");
+		System.out.println("이름:" + name);
+		System.out.println("나이:" + age);
+		System.out.println("---------------------------------");
+	}
+
+	
 	
 }
