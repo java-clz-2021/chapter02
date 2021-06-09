@@ -10,7 +10,7 @@ public class Rectangle extends Shape{
 
 	public Rectangle() {
 		//super();      // Shape() --> 표기는 super()
-		System.out.println("Rectangle()");
+		//System.out.println("Rectangle()");
 	}
 
 	public Rectangle(String fillColor, String lineColor, int width, int height) {
@@ -18,7 +18,7 @@ public class Rectangle extends Shape{
 		super(fillColor, lineColor);
 		this.width = width;
 		this.height = height;
-		System.out.println("Rectangle(4)");
+		//System.out.println("Rectangle(4)");
 	}
 
 

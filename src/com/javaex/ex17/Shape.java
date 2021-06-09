@@ -9,13 +9,13 @@ public class Shape {
 	
 	//생성자
 	public Shape() {
-		System.out.println("Shape()");
+		//System.out.println("Shape()");
 	}
 	
 	public Shape(String fillColor, String lineColor) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
-		System.out.println("Shape(2)");
+		//System.out.println("Shape(2)");
 	}
 
 
